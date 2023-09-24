@@ -13,32 +13,29 @@
   </head>
   <body>
     <h1>Add User</h1>
-    <form action="/addUser" method="post">
-      <label for="user_name">Name:</label>
-      <input type="text" id="user_name" name="user_name" required /><br /><br />
-
-      <label for="user_phone">Phone Number:</label>
-      <input
-        type="text"
-        id="user_phone"
-        name="user_phone"
-        required
-      /><br /><br />
-
-      <label for="user_gender">Gender:</label>
-      <input
-        type="text"
-        id="user_gender"
-        name="user_gender"
-        required
-      /><br /><br />
-
-      <label for="user_job">Job:</label>
-      <input type="text" id="user_job" name="user_job" required /><br /><br />
-      <button type="submit" class="btn btn-outline-secondary text-black mx-2">
-        Add User
-      </button>
-    </form>
+    <div class="mt-5">
+      <form action="/addUser" method="post">
+        <div class="mb-3">
+          <label for="user_name">Name:</label>
+          <input type="text" id="user_name" name="user_name" required />
+        </div>
+        <div class="mb-3">
+          <label for="user_phone">Phone Number:</label>
+          <input type="text" id="user_phone" name="user_phone" required />
+        </div>
+        <div class="mb-3">
+          <label for="user_gender">Gender:</label>
+          <input type="text" id="user_gender" name="user_gender" required />
+        </div>
+        <div class="mb-3">
+          <label for="user_job">Job:</label>
+          <input type="text" id="user_job" name="user_job" required />
+        </div>
+        <button type="submit" class="btn btn-outline-secondary text-black mx-2">
+          Add User
+        </button>
+      </form>
+    </div>
     <a href="/" class="btn btn-link text-black">Back to Users</a>
   </body>
 </html>
