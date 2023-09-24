@@ -1,20 +1,20 @@
-const pg = require('pg');
+const pg = require("pg");
 
 const client = new pg.Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'instagram',
-  password: 'postgres',
+  user: "postgres",
+  host: "localhost",
+  database: "users",
+  password: "postgresql",
   port: 5432,
 });
-
+  
 client
   .connect()
   .then(function () {
-    console.log('✅ Connected to database successfully!');
+    console.log("✅ Connected to database successfully!");
   })
   .catch(function (error) {
-    console.log('❌ Error connecting to database! ' + error.message);
+    console.log("❌ Error connecting to database! " + error.message);
   });
 
 module.exports = client;
