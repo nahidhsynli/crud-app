@@ -12,22 +12,25 @@
     />
   </head>
   <body>
-    <h1>Add User</h1>
-    <div class="mt-5">
+    <h1 class="m-3">Add User</h1>
+    <div class="m-3">
       <form action="/addUser" method="post">
-        <div class="mb-3">
+        <div class="m-3">
           <label for="user_name">Name:</label>
           <input type="text" id="user_name" name="user_name" required />
         </div>
-        <div class="mb-3">
+        <div class="m-3">
           <label for="user_phone">Phone Number:</label>
           <input type="text" id="user_phone" name="user_phone" required />
         </div>
-        <div class="mb-3">
+        <div class="m-3">
           <label for="user_gender">Gender:</label>
-          <input type="text" id="user_gender" name="user_gender" required />
+          <select id="user_gender" name="user_gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
         </div>
-        <div class="mb-3">
+        <div class="m-3">
           <label for="user_job">Job:</label>
           <input type="text" id="user_job" name="user_job" required />
         </div>
